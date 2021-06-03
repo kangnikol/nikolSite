@@ -117,117 +117,152 @@ body {
   }
 }
 
-@media (min-width: 992px) {
-  // custom navbar
-  .custom-nav {
-    .navbar-brand {
-      margin-top: -4px;
-      font-size: 25px;
-      color: $secondaryColor;
-      font-weight: 500;
-      &:hover {
-        color: $secondaryColor;
-      }
-      span {
-        font-weight: 400;
-        color: $secondaryColor;
-      }
+//  wave
+
+.wave1 {
+  margin-top: 100px;
+}
+
+.wave2 {
+  margin-top: -20px;
+}
+
+.about-section {
+  // margin-top: 250px;
+
+  .jumbotron {
+    //   border-radius: 5px;
+    background: rgb(238, 137, 38);
+    background: linear-gradient(0deg, rgba(238, 137, 38, 1) 0%, rgba(224, 173, 48, 1) 100%);
+    img {
+      margin-top: 30px;
     }
+  }
 
-    .navbar-nav {
-      background-color: rgba($textColor, 0);
+  .display-4 {
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+  }
 
-      .nav-item {
-        color: white;
-        margin-top: 2px;
-        margin-right: 20px;
-        font-size: 13px;
-        font-weight: 400;
-        text-transform: uppercase;
+  .lead {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 15px;
+  }
+
+  @media (min-width: 992px) {
+    // custom navbar
+    .custom-nav {
+      .navbar-brand {
+        margin-top: -4px;
+        font-size: 25px;
+        color: $secondaryColor;
+        font-weight: 500;
         &:hover {
-          border-bottom: white;
+          color: $secondaryColor;
+        }
+        span {
+          font-weight: 400;
+          color: $secondaryColor;
         }
       }
 
-      .tombol {
+      .navbar-nav {
+        background-color: rgba($textColor, 0);
+
+        .nav-item {
+          color: white;
+          margin-top: 2px;
+          margin-right: 20px;
+          font-size: 13px;
+          font-weight: 400;
+          text-transform: uppercase;
+          &:hover {
+            border-bottom: white;
+          }
+        }
+
+        .tombol {
+          font-size: 13px;
+          border-radius: 30px;
+          background-color: white;
+          margin-left: 20px;
+          margin-top: 3px;
+          color: $textColor;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    // custom section
+    .custom-section {
+      margin-top: -55px;
+      position: relative;
+
+      h2 {
+        font-size: 60px;
+        font-weight: 200;
+        text-align: left;
+        color: $textColor;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: left;
+        color: $textColor2;
+      }
+
+      a {
         font-size: 13px;
         border-radius: 30px;
-        background-color: white;
-        margin-left: 20px;
+        background-color: $primaryColor;
         margin-top: 3px;
-        color: $textColor;
+        color: white;
         text-align: center;
         text-transform: uppercase;
       }
     }
-  }
 
-  // custom section
-  .custom-section {
-    margin-top: -55px;
-    position: relative;
+    //  wave
 
-    h2 {
-      font-size: 60px;
-      font-weight: 200;
-      text-align: left;
-      color: $textColor;
+    .wave1 {
+      margin-top: 100px;
+    }
 
-      span {
-        font-weight: 500;
+    .wave2 {
+      margin-top: -20px;
+    }
+
+    .about-section {
+      // margin-top: 250px;
+
+      .jumbotron {
+        //   border-radius: 5px;
+        background: rgb(238, 137, 38);
+        background: linear-gradient(0deg, rgba(238, 137, 38, 1) 0%, rgba(224, 173, 48, 1) 100%);
+        img {
+          margin-top: 30px;
+        }
       }
-    }
 
-    p {
-      margin-top: 20px;
-      font-size: 15px;
-      text-align: left;
-      color: $textColor2;
-    }
-
-    a {
-      font-size: 13px;
-      border-radius: 30px;
-      background-color: $primaryColor;
-      margin-top: 3px;
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-    }
-  }
-
-  //  wave 1
-
-  .wave1 {
-    margin-top: 100px;
-  }
-
-  .wave2 {
-    margin-top: -20px;
-  }
-
-  .about-section {
-    // margin-top: 250px;
-
-    .jumbotron {
-      //   border-radius: 5px;
-      background: rgb(238, 137, 38);
-      background: linear-gradient(0deg, rgba(238, 137, 38, 1) 0%, rgba(224, 173, 48, 1) 100%);
-      img {
-        margin-top: 30px;
+      .display-4 {
+        color: white;
+        margin-top: 20px;
+        font-size: 30px;
       }
-    }
 
-    .display-4 {
-      color: white;
-      margin-top: 20px;
-      font-size: 30px;
-    }
-
-    .lead {
-      margin-bottom: 20px;
-      color: white;
-      font-size: 15px;
+      .lead {
+        margin-bottom: 20px;
+        color: white;
+        font-size: 15px;
+      }
     }
   }
 }
