@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body::before {
+  content: "";
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50vmax;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.custom-nav {
+  margin-top: 20px;
+}
+
+.custom-nav .navbar-brand {
+  margin-top: -4px;
+  font-size: 25px;
+  color: #586cbd;
+  font-weight: 500;
+}
+
+.custom-nav .navbar-brand span {
+  font-weight: 400;
+  color: #586cbd;
+}
+
+.custom-nav .navbar-brand:hover {
+  color: #586cbd;
+}
+
+.custom-nav .navbar-nav {
+  background-color: rgba(44, 42, 85, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.custom-nav .navbar-nav .nav-link {
+  text-align: center;
+  color: white;
+  margin-top: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.custom-nav .navbar-nav .nav-link:hover {
+  color: #2c2a55;
+}
+
+.custom-nav .navbar-nav .tombol {
+  font-size: 13px;
+  border-radius: 30px;
+  background-color: white;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: #2c2a55;
+  text-align: center !important;
+  text-transform: uppercase;
+}
+
+.custom-section {
+  margin-top: 50px;
+  position: static;
+}
+
+.custom-section h2 {
+  font-size: 50px;
+  font-weight: 200;
+  color: #2c2a55;
+  margin-top: 250px;
+  text-align: center;
+}
+
+.custom-section h2 span {
+  font-weight: 500;
+}
+
+.custom-section p {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #6578c4;
+  text-align: center;
+}
+
+.custom-section a {
+  font-size: 13px;
+  border-radius: 30px;
+  background-color: #ee8926;
+  margin-top: 3px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.custom-section a:hover {
+  background-color: transparent;
+  border-color: #ee8926;
+}
+
+@media (min-width: 992px) {
+  .custom-nav .navbar-brand {
+    margin-top: -4px;
+    font-size: 25px;
+    color: #586cbd;
+    font-weight: 500;
+  }
+  .custom-nav .navbar-brand:hover {
+    color: #586cbd;
+  }
+  .custom-nav .navbar-brand span {
+    font-weight: 400;
+    color: #586cbd;
+  }
+  .custom-nav .navbar-nav {
+    background-color: rgba(44, 42, 85, 0);
+  }
+  .custom-nav .navbar-nav .nav-item {
+    color: white;
+    margin-top: 2px;
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .custom-nav .navbar-nav .nav-item:hover {
+    border-bottom: white;
+  }
+  .custom-nav .navbar-nav .tombol {
+    font-size: 13px;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 3px;
+    color: #2c2a55;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .custom-section {
+    margin-top: -55px;
+    position: relative;
+  }
+  .custom-section h2 {
+    font-size: 60px;
+    font-weight: 200;
+    text-align: left;
+    color: #2c2a55;
+  }
+  .custom-section h2 span {
+    font-weight: 500;
+  }
+  .custom-section p {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+    color: #6578c4;
+  }
+  .custom-section a {
+    font-size: 13px;
+    border-radius: 30px;
+    background-color: #ee8926;
+    margin-top: 3px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .wave1 {
+    margin-top: 100px;
+  }
+  .wave2 {
+    margin-top: -20px;
+  }
+  .about-section .jumbotron {
+    background: #ee8926;
+    background: -webkit-gradient(linear, left bottom, left top, from(#ee8926), to(#e0ad30));
+    background: linear-gradient(0deg, #ee8926 0%, #e0ad30 100%);
+  }
+  .about-section .jumbotron img {
+    margin-top: 30px;
+  }
+  .about-section .display-4 {
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .about-section .lead {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

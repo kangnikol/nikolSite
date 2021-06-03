@@ -1,0 +1,233 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+// variables
+$primaryColor: #ee8926;
+$secondaryColor: #586cbd;
+$partialColor: #e0ad30;
+$textColor: #2c2a55;
+$textColor2: #6578c4;
+
+// styles
+body {
+  font-family: "Ubuntu", sans-serif;
+  &::before {
+    content: "";
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 50vmax;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    // background-image: url(../img/wave1.svg);
+  }
+}
+
+// navbar
+
+.custom-nav {
+  margin-top: 20px;
+
+  .navbar-brand {
+    margin-top: -4px;
+    font-size: 25px;
+    color: $secondaryColor;
+    font-weight: 500;
+    span {
+      font-weight: 400;
+      color: $secondaryColor;
+    }
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+
+  .navbar-nav {
+    background-color: rgba($textColor, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+
+    .nav-link {
+      text-align: center;
+      color: white;
+      margin-top: 2px;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $textColor;
+      }
+    }
+
+    .tombol {
+      font-size: 13px;
+      border-radius: 30px;
+      background-color: white;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      color: $textColor;
+      text-align: center !important;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// custom section
+.custom-section {
+  margin-top: 50px;
+  position: static;
+
+  h2 {
+    font-size: 50px;
+    font-weight: 200;
+    color: $textColor;
+    margin-top: 250px;
+    text-align: center;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: $textColor2;
+    text-align: center;
+  }
+
+  a {
+    font-size: 13px;
+    border-radius: 30px;
+    background-color: $primaryColor;
+    margin-top: 3px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      background-color: transparent;
+      border-color: $primaryColor;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  // custom navbar
+  .custom-nav {
+    .navbar-brand {
+      margin-top: -4px;
+      font-size: 25px;
+      color: $secondaryColor;
+      font-weight: 500;
+      &:hover {
+        color: $secondaryColor;
+      }
+      span {
+        font-weight: 400;
+        color: $secondaryColor;
+      }
+    }
+
+    .navbar-nav {
+      background-color: rgba($textColor, 0);
+
+      .nav-item {
+        color: white;
+        margin-top: 2px;
+        margin-right: 20px;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        &:hover {
+          border-bottom: white;
+        }
+      }
+
+      .tombol {
+        font-size: 13px;
+        border-radius: 30px;
+        background-color: white;
+        margin-left: 20px;
+        margin-top: 3px;
+        color: $textColor;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // custom section
+  .custom-section {
+    margin-top: -55px;
+    position: relative;
+
+    h2 {
+      font-size: 60px;
+      font-weight: 200;
+      text-align: left;
+      color: $textColor;
+
+      span {
+        font-weight: 500;
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: left;
+      color: $textColor2;
+    }
+
+    a {
+      font-size: 13px;
+      border-radius: 30px;
+      background-color: $primaryColor;
+      margin-top: 3px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  //  wave 1
+
+  .wave1 {
+    margin-top: 100px;
+  }
+
+  .wave2 {
+    margin-top: -20px;
+  }
+
+  .about-section {
+    // margin-top: 250px;
+
+    .jumbotron {
+      //   border-radius: 5px;
+      background: rgb(238, 137, 38);
+      background: linear-gradient(0deg, rgba(238, 137, 38, 1) 0%, rgba(224, 173, 48, 1) 100%);
+      img {
+        margin-top: 30px;
+      }
+    }
+
+    .display-4 {
+      color: white;
+      margin-top: 20px;
+      font-size: 30px;
+    }
+
+    .lead {
+      margin-bottom: 20px;
+      color: white;
+      font-size: 15px;
+    }
+  }
+}
