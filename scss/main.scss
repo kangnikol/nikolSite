@@ -133,7 +133,11 @@ body {
   .jumbotron {
     //   border-radius: 5px;
     background: rgb(238, 137, 38);
-    background: linear-gradient(0deg, rgba(238, 137, 38, 1) 0%, rgba(224, 173, 48, 1) 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(238, 137, 38, 1) 0%,
+      rgba(224, 173, 48, 1) 100%
+    );
     img {
       margin-top: 30px;
     }
@@ -150,119 +154,147 @@ body {
     color: white;
     font-size: 15px;
   }
+}
 
-  @media (min-width: 992px) {
-    // custom navbar
-    .custom-nav {
-      .navbar-brand {
-        margin-top: -4px;
-        font-size: 25px;
+@media (min-width: 992px) {
+  // custom navbar
+  .custom-nav {
+    .navbar-brand {
+      margin-top: -4px;
+      font-size: 25px;
+      color: $secondaryColor;
+      font-weight: 500;
+      &:hover {
         color: $secondaryColor;
-        font-weight: 500;
-        &:hover {
-          color: $secondaryColor;
-        }
-        span {
-          font-weight: 400;
-          color: $secondaryColor;
-        }
       }
-
-      .navbar-nav {
-        background-color: rgba($textColor, 0);
-
-        .nav-item {
-          color: white;
-          margin-top: 2px;
-          margin-right: 20px;
-          font-size: 13px;
-          font-weight: 400;
-          text-transform: uppercase;
-          &:hover {
-            border-bottom: white;
-          }
-        }
-
-        .tombol {
-          font-size: 13px;
-          border-radius: 30px;
-          background-color: white;
-          margin-left: 20px;
-          margin-top: 3px;
-          color: $textColor;
-          text-align: center;
-          text-transform: uppercase;
-        }
+      span {
+        font-weight: 400;
+        color: $secondaryColor;
       }
     }
 
-    // custom section
-    .custom-section {
-      margin-top: -55px;
-      position: relative;
+    .navbar-nav {
+      background-color: rgba(0, 0, 0, 0);
 
-      h2 {
-        font-size: 60px;
-        font-weight: 200;
-        text-align: left;
-        color: $textColor;
+      .nav-link {
+        text-align: center;
+        color: white;
+        margin-top: 2px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
 
-        span {
-          font-weight: 500;
+        &:hover {
+          color: $textColor;
         }
       }
 
-      p {
-        margin-top: 20px;
-        font-size: 15px;
-        text-align: left;
-        color: $textColor2;
-      }
-
-      a {
+      .tombol {
         font-size: 13px;
         border-radius: 30px;
-        background-color: $primaryColor;
+        background-color: white;
         margin-top: 3px;
-        color: white;
-        text-align: center;
+        margin-bottom: 3px;
+        color: $textColor;
+        text-align: center !important;
         text-transform: uppercase;
       }
     }
+  }
 
-    //  wave
+  // custom section
+  .custom-section {
+    margin-top: -55px;
+    position: relative;
 
-    .wave1 {
-      margin-top: 100px;
+    h2 {
+      font-size: 60px;
+      font-weight: 200;
+      text-align: left;
+      color: $textColor;
+
+      span {
+        font-weight: 500;
+      }
     }
 
-    .wave2 {
-      margin-top: -20px;
+    p {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: left;
+      color: $textColor2;
     }
 
-    .about-section {
-      // margin-top: 250px;
+    a {
+      font-size: 13px;
+      border-radius: 30px;
+      background-color: $primaryColor;
+      margin-top: 3px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 
-      .jumbotron {
-        //   border-radius: 5px;
-        background: rgb(238, 137, 38);
-        background: linear-gradient(0deg, rgba(238, 137, 38, 1) 0%, rgba(224, 173, 48, 1) 100%);
-        img {
-          margin-top: 30px;
-        }
-      }
+  //  wave
 
-      .display-4 {
-        color: white;
-        margin-top: 20px;
-        font-size: 30px;
-      }
+  .wave1 {
+    margin-top: 100px;
+  }
 
-      .lead {
-        margin-bottom: 20px;
-        color: white;
-        font-size: 15px;
+  .wave2 {
+    margin-top: -20px;
+  }
+
+  .about-section {
+    // margin-top: 250px;
+
+    .jumbotron {
+      //   border-radius: 5px;
+      background: rgb(238, 137, 38);
+      background: linear-gradient(
+        0deg,
+        rgba(238, 137, 38, 1) 0%,
+        rgba(224, 173, 48, 1) 100%
+      );
+      img {
+        margin-top: 30px;
       }
+    }
+
+    .display-4 {
+      color: white;
+      margin-top: 20px;
+      font-size: 30px;
+    }
+
+    .lead {
+      margin-bottom: 20px;
+      color: white;
+      font-size: 15px;
+    }
+  }
+
+  .gallery-section {
+    margin-top: 15px;
+
+    .title {
+      h2 {
+        color: $textColor;
+      }
+    }
+
+    .photo {
+      margin-top: 30px;
+      margin-bottom: 5px;
+      margin-left: 35px;
+      margin-right: -5px;
+    }
+
+    .card {
+      width: 18rem;
     }
   }
 }

@@ -138,65 +138,63 @@ body::before {
 }
 
 @media (min-width: 992px) {
-  .custom-nav .navbar-brand {
+  .about-section .custom-nav .navbar-brand {
     margin-top: -4px;
     font-size: 25px;
     color: #586cbd;
     font-weight: 500;
   }
-  .custom-nav .navbar-brand:hover {
+  .about-section .custom-nav .navbar-brand:hover {
     color: #586cbd;
   }
-  .custom-nav .navbar-brand span {
+  .about-section .custom-nav .navbar-brand span {
     font-weight: 400;
     color: #586cbd;
   }
-  .custom-nav .navbar-nav {
+  .about-section .custom-nav .navbar-nav {
     background-color: rgba(0, 0, 0, 0);
   }
-  .custom-nav .navbar-nav .nav-link {
-    text-align: center;
+  .about-section .custom-nav .navbar-nav .nav-item {
     color: white;
     margin-top: 2px;
-    margin-left: 20px;
     margin-right: 20px;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
   }
-  .custom-nav .navbar-nav .nav-link:hover {
-    color: #2c2a55;
+  .about-section .custom-nav .navbar-nav .nav-item:hover {
+    border-bottom: white;
   }
-  .custom-nav .navbar-nav .tombol {
+  .about-section .custom-nav .navbar-nav .tombol {
     font-size: 13px;
     border-radius: 30px;
     background-color: white;
+    margin-left: 20px;
     margin-top: 3px;
-    margin-bottom: 3px;
     color: #2c2a55;
-    text-align: center !important;
+    text-align: center;
     text-transform: uppercase;
   }
-  .custom-section {
+  .about-section .custom-section {
     margin-top: -55px;
     position: relative;
   }
-  .custom-section h2 {
+  .about-section .custom-section h2 {
     font-size: 60px;
     font-weight: 200;
     text-align: left;
     color: #2c2a55;
   }
-  .custom-section h2 span {
+  .about-section .custom-section h2 span {
     font-weight: 500;
   }
-  .custom-section p {
+  .about-section .custom-section p {
     margin-top: 20px;
     font-size: 15px;
     text-align: left;
     color: #6578c4;
   }
-  .custom-section a {
+  .about-section .custom-section a {
     font-size: 13px;
     border-radius: 30px;
     background-color: #ee8926;
@@ -205,44 +203,35 @@ body::before {
     text-align: center;
     text-transform: uppercase;
   }
-  .wave1 {
+  .about-section .wave1 {
     margin-top: 100px;
   }
-  .wave2 {
+  .about-section .wave2 {
     margin-top: -20px;
   }
-  .about-section .jumbotron {
+  .about-section .about-section .jumbotron {
     background: #ee8926;
     background: -webkit-gradient(linear, left bottom, left top, from(#ee8926), to(#e0ad30));
     background: linear-gradient(0deg, #ee8926 0%, #e0ad30 100%);
   }
-  .about-section .jumbotron img {
+  .about-section .about-section .jumbotron img {
     margin-top: 30px;
   }
-  .about-section .display-4 {
+  .about-section .about-section .display-4 {
     color: white;
     margin-top: 20px;
     font-size: 30px;
   }
-  .about-section .lead {
+  .about-section .about-section .lead {
     margin-bottom: 20px;
     color: white;
     font-size: 15px;
   }
-  .gallery-section {
-    margin-top: 15px;
+  .about-section .gallery-section {
+    margin-top: 10px;
   }
-  .gallery-section .title h2 {
-    color: #2c2a55;
-  }
-  .gallery-section .photo {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    margin-left: 35px;
-    margin-right: -5px;
-  }
-  .gallery-section .card {
-    width: 18rem;
+  .about-section .gallery-section h2 {
+    color: red;
   }
 }
 /*# sourceMappingURL=main.css.map */
