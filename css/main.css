@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 body {
   font-family: "Ubuntu", sans-serif;
-  min-height: 3000px;
 }
 
 body::before {
@@ -197,6 +196,9 @@ body::before {
 }
 
 @media (min-width: 992px) {
+  body {
+    min-height: 3000px;
+  }
   .custom-nav .navbar-brand {
     margin-top: -4px;
     font-size: 25px;
