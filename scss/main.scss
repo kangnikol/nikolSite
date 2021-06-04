@@ -286,8 +286,18 @@ body {
       margin-right: -5px;
     }
 
-    .card {
-      width: 18rem;
+    .tombol {
+      font-size: 13px;
+      border-radius: 30px;
+      background-color: $primaryColor;
+      margin-top: 3px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      &:hover {
+        background-color: transparent;
+        border-color: $primaryColor;
+      }
     }
   }
 }
