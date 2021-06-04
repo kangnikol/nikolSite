@@ -18,6 +18,7 @@ body::before {
 
 .custom-nav {
   margin-top: 20px;
+  z-index: 100;
 }
 
 .custom-nav .navbar-brand {
@@ -208,9 +209,6 @@ body::before {
 }
 
 @media (min-width: 992px) {
-  body {
-    min-height: 3000px;
-  }
   .custom-nav .navbar-brand {
     margin-top: -4px;
     font-size: 25px;
@@ -239,6 +237,9 @@ body::before {
   }
   .custom-nav .navbar-nav .nav-link:hover {
     color: #2c2a55;
+  }
+  .custom-nav .navbar-nav a {
+    text-decoration: none;
   }
   .custom-nav .navbar-nav .tombol {
     font-size: 13px;
@@ -348,6 +349,7 @@ body::before {
     color: #2c2a55;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
   }
   .footer {
     background: #ee8926;
@@ -355,9 +357,6 @@ body::before {
     background: linear-gradient(0deg, #ee8926 0%, #e0ad30 100%);
     color: white;
     padding: 10px;
-  }
-  .footer .link {
-    color: white;
   }
 }
 /*# sourceMappingURL=main.css.map */
