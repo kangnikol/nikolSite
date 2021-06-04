@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 body {
   font-family: "Ubuntu", sans-serif;
+  min-height: 3000px;
 }
 
 body::before {
@@ -70,7 +71,7 @@ body::before {
 }
 
 .custom-section {
-  margin-top: 50px;
+  margin-top: 100px;
   position: static;
 }
 
@@ -136,6 +137,47 @@ body::before {
   margin-bottom: 20px;
   color: white;
   font-size: 15px;
+}
+
+.gallery-section {
+  margin-top: 15px;
+}
+
+.gallery-section .title h2 {
+  color: #2c2a55;
+}
+
+.gallery-section .photo {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-right: -5px;
+}
+
+.gallery-section a {
+  font-size: 13px;
+  border-radius: 30px;
+  background-color: #ee8926;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.gallery-section a:hover {
+  background-color: transparent;
+  border-color: #ee8926;
+}
+
+.contact-section {
+  background: #ee8926;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee8926), to(#e0ad30));
+  background: linear-gradient(0deg, #ee8926 0%, #e0ad30 100%);
+  color: white;
+}
+
+.contact-section .wev {
+  margin-top: -10px;
 }
 
 @media (min-width: 992px) {
@@ -230,7 +272,6 @@ body::before {
     color: white;
     font-size: 15px;
   }
-<<<<<<< Updated upstream
   .gallery-section {
     margin-top: 15px;
   }
@@ -243,12 +284,40 @@ body::before {
     margin-left: 35px;
     margin-right: -5px;
   }
-  .gallery-section .card {
-    width: 18rem;
-=======
-  .about-section .gallery-section {
-    margin-top: 100px;
->>>>>>> Stashed changes
+  .gallery-section a {
+    font-size: 13px;
+    border-radius: 30px;
+    background-color: #ee8926;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .gallery-section a:hover {
+    background-color: transparent;
+    border-color: #ee8926;
+  }
+  .contact-section {
+    background: #ee8926;
+    background: -webkit-gradient(linear, left bottom, left top, from(#ee8926), to(#e0ad30));
+    background: linear-gradient(0deg, #ee8926 0%, #e0ad30 100%);
+    color: white;
+  }
+  .contact-section .tombol {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 13px;
+    border-radius: 30px;
+    background-color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #2c2a55;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 /*# sourceMappingURL=main.css.map */
