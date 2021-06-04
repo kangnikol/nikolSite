@@ -195,6 +195,18 @@ body::before {
   text-transform: uppercase;
 }
 
+.footer {
+  background: #ee8926;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee8926), to(#e0ad30));
+  background: linear-gradient(0deg, #ee8926 0%, #e0ad30 100%);
+  color: white;
+  padding: 10px;
+}
+
+.footer .link {
+  color: white;
+}
+
 @media (min-width: 992px) {
   body {
     min-height: 3000px;

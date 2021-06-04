@@ -208,6 +208,17 @@ body {
   }
 }
 
+.footer {
+  background: rgb(238, 137, 38);
+  background: linear-gradient(0deg, rgba(238, 137, 38, 1) 0%, rgba(224, 173, 48, 1) 100%);
+  color: white;
+  padding: 10px;
+
+  .link {
+    color: white;
+  }
+}
+
 @media (min-width: 992px) {
   body {
     min-height: 3000px;
